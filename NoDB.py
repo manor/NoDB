@@ -20,9 +20,9 @@ def create(file_name):
     if Nof or DBf:
         print "Attempted to initialize %s when %s was still open!" % (file_name, name)
         sys.exit(-1)
-    if os.path.exists(file_name+".No") or os.path.exists(file_name+".DB"):
-        print "Attempted to recreate %s!!!" % file_name
-        sys.exit(-1)
+    #if os.path.exists(file_name+".No") or os.path.exists(file_name+".DB"):
+    #    print "Attempted to recreate %s!!!" % file_name
+    #    sys.exit(-1)
     Nof = open(file_name+".No", 'wb')
     DBf = open(file_name+".DB", 'wb')
     N = 0
